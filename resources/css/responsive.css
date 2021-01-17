@@ -1,0 +1,133 @@
+@media only screen and (max-width: 1024px) {
+    .main_nav {
+        display: none;
+    }
+    #side-nav{
+        display: block;
+    }
+    #menu-btn{
+        display: block;
+    }
+    
+}
+@media only screen and (max-width:768px){
+    .hero_text_box{
+        left: 11%;
+    }
+    .about-img {
+        width: 90%;
+        margin-left: 3%;
+    }
+    html{
+        font-size: 57.5%;
+    }
+    .svg9{
+        margin-left: -5rem;
+    }
+    .svg-10{
+        margin-right: -19rem;
+    }
+}
+@media only screen and (max-width:576px){
+    .hero_text_box{
+        left: -8%;
+    }
+}
+@media only screen and (max-width:480px){
+    html {
+        font-size: 55%;
+    }
+    img.hero_image{
+        width: 40%;
+    }
+    .hero_text_box {
+        top: 60%;
+        left: 50%;
+        transform: translate(-45%,-50%);
+    }
+    .hero_image{
+        margin-top: 2rem;
+    }
+    .hero_text_box h1{
+       font-size: 2rem;
+    }
+    /* label.show-btn {
+       display: none;
+    } */
+    /* .hero_text_box .btn-hero{
+        display: none;
+    /* } */
+    /* .hero-btn2{
+        margin-top: 16rem; */
+    /* } */ 
+    .portfolio-filter button{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .col.span_1_of_5.mix {
+        width: 18.72%;
+    }
+    .portfolio-image {
+        width: 70%;
+    }
+    .portfolio-section{
+        background-size: contain;
+    }
+    header{
+        height: auto;
+    }
+    .skill_section .box {
+        margin-top: 8rem;
+        width: 75%;
+    }
+    .true-svg{
+        display: none;
+    }
+    .logo{
+        width: 5rem;
+    }
+    svg.radial-progress {
+        max-width: 12rem;}
+        .skill_section h3{
+            font-size: 1rem;
+        }
+        .col.span_1_of_2.box.pricing-wrapper {
+    width: 49.2%;
+}
+.foot-img {
+    width: 100%;
+    display: none;
+}
+footer{
+    background: url(../img/foot_img2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btn.btn-hero {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+.hero-btn2{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+.little-description {
+    font-size: 1.6rem;
+    width: 74%;
+    line-height: 3rem;
+    position: relative;
+}
+.skill_section p.little-description{
+    margin-bottom: 4rem;
+}
+.col.span_1_of_5.mix {
+    width: 32%;
+}
+.skill_section .box{
+    width: 100%;
+}
+.skill_section h3{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+}

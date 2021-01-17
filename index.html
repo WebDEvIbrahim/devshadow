@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DevShadow-Your future Developer</title>
+    <link rel="icon" href="resources/img/logo2.png" type="image/gif" sizes="16x16">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/logo2.png">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- VENDORS FILES -->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/animated-circle.css">
+    <link rel="stylesheet" href="./flowery/dist/style.css">
+    <link rel="stylesheet" href="resources/css/swing.css">
+    <link rel="stylesheet" href="resources/css/weather-style.css">
+    <!-- RESOURCES FILES -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+        <!------------flowery section------------------>
+        <!-- partial:index.partial.html -->
+        <div id="app">
+            <svg id="stage" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <g id="branchGroup"></g>
+                <g id="thornGroup"></g>
+                <g id="leafGroup"></g>
+                <g id="flowerGroup"></g>
+            </svg>
+        </div>
+        <a id="download-button"></a>
+
+        <a href="https://github.com/ste-vg/plant-drawer" target="_blank" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+            </svg></a>
+        <style>
+            .github-corner:hover .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+
+            @keyframes octocat-wave {
+
+                0%,
+                100% {
+                    transform: rotate(0)
+                }
+
+                20%,
+                60% {
+                    transform: rotate(-25deg)
+                }
+
+                40%,
+                80% {
+                    transform: rotate(10deg)
+                }
+            }
+
+            @media (max-width:500px) {
+                .github-corner:hover .octo-arm {
+                    animation: none
+                }
+
+                .github-corner .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out
+                }
+            }
+        </style>
+
+        <!-- partial -->
+        <!--  start   login form section-->
+
+        <!--
+<div class="center">
+      <input type="checkbox" id="show">
+      <div class="container">
+        <label for="show" class="close-btn fas fa-times" title="close"></label>
+        <div class="text">
+Login Form</div>
+<form action="#">
+          <div class="data">
+            <label>Email or Phone</label>
+            <input type="text" required>
+          </div>
+<div class="data">
+            <label>Password</label>
+            <input type="password" required>
+          </div>
+<div class="forgot-pass">
+<a href="#">Forgot Password?</a></div>
+<div class="btn">
+            <div class="inner">
+</div>
+<button type="submit">login</button>
+          </div>
+<div class="signup-link">
+Not a member? <a href="#">Signup now</a></div>
+</form>
+</div>
+</div>
+-->
+        <!--  end   login form section-->
+
+        <!--flying bird effect--->
+
+        <div class="row">
+            <a href="#home"><img src="resources/img/logo2.png" alt="" class="logo"></a>
+            <ul class="main_nav">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#skill">Skill</a></li>
+
+                <li><a href="#about-us">About Me</a></li>
+                <li><a href="#contact_us"><label for="show" class="show-btn">Contact Me</label></a></li>
+            </ul>
+            <!-- ****************************side-nav starts****************************** -->
+            <div id="side-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#about-us">Menu</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                  </ul> 
+            </div>
+            <a href="#"><i class="fas fa-bars menu-icon" id="menu-btn"></i></a> 
+              <!-- ****************************side-nav ends****************************** -->
+        </div>
+
+        <div class="row first-edit">
+            <div class="col span_1_of_2 box">
+                <img src="resources/img/boy%20with%20butterfly.png" alt="" class="hero_image">
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="hero_text_box">
+                    <h1>HI! I am DevShadow.</h1>
+                    <a href="#" class="btn btn-hero"><label for="show" class="show-btn">Contact Me</label></a>
+                    <a href="https://raw.githubusercontent.com/WebDEvIbrahim/cv/main/Cv-Ibrahim-khan.pdf" target="_blank" class="btn hero-btn2">Download CV</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-flying bird container ends-->
+
+
+    </header>
+
+    <!-- start portfolio section section-->
+
+    <!-- start portfolio section section-->
+
+    <div class="section portfolio-section" id="portfolio">
+        <div class="row">
+
+            <h2>My Projects</h2>
+            <p class="little-description">
+                All Web Templates have been developed using a bs4 grid system, HTML5/CSS3 files are available and ready to use right away. 
+            </p>
+        </div>
+        <div class="row">
+            <div class="portfolio-filter">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".web">Recent</button>
+                <button type="button" data-filter=".apps">Creative</button>
+                <button type="button" data-filter=".icons">Best</button>
+            </div>
+        </div>
+        <div class="row container-pro">
+            <div class="row">
+                <div class="col span_1_of_5 mix apps box">
+                    <a href="" target="_blank"><img src="resources/img/Portfolio.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+                <div class="col span_1_of_5 mix apps web box">
+                    <a href="https://webdevibrahim.github.io/gohub/" target="_blank"><img src="resources/img/Gohub.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+                <div class="col span_1_of_5 mix apps web box">
+                    <a href="https://webdevibrahim.github.io/startup/" target="_blank"><img src="resources/img/startup_pro.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+                <div class="col span_1_of_5 mix apps web box">
+                    <a href=" https://webdevibrahim.github.io/zenwork/" target="_blank"><img src="resources/img/Zenwork.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+                <div class="col span_1_of_5 mix apps web box">
+                    <a href=" https://webdevibrahim.github.io/webagency/" target="_blank"><img src="resources/img/Webagency_main.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col span_1_of_5 mix icons box">
+                    <a href="https://webdevibrahim.github.io/bookshop/" target="_blank"><img src="resources/img/bookshop.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+                <div class="col span_1_of_5 mix icons web apps box">
+                    <a href="https://webdevibrahim.github.io/kallyas/" target="_blank"><img src="resources/img/Kallyas.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+                <div class="col span_1_of_5 mix apps web box">
+                    <a href="https://webdevibrahim.github.io/Doob/" target="_blank"><img src="resources/img/doob.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+                <div class="col span_1_of_5 mix icons box">
+                    <a href="https://webdevibrahim.github.io/education/" target="_blank"><img src="resources/img/education_website.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+                <div class="col span_1_of_5 mix icons web apps box">
+                    <a href="https://webdevibrahim.github.io/applab/" target="_blank"><img src="resources/img/Applab.png" alt="ISOMETRIC PERSPECTIVE MOCK-UP" class="portfolio-image"> </a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- end portfolio section sectioportfolio-->
+    <!-- end portfolio section sectioportfolio-->
+    <!------------start About us section------------------>
+    <section class="about_us" id="about-us">
+
+        <div class="row">
+
+            <!-- partial:index.partial.html -->
+            <div class="col span_1_of_2 box">
+                <img src="resources/img/about-img.png" alt="" class="about-img">
+            </div>
+            <div class="col span_1_of_2 box gulla">
+                <h2 class="aboutme">Who am I?</h2>
+                <p class="little-description"> My name is Ibrahim Khan. I'm 21years old. I born in Narail, Bangladesh. Currently, I am living in Dhaka.
+                    I am working as a web developer with 1 years experience creating and maintaining functional, attractive, and responsive websites. Clear understanding of modern technologies and best design practices.
+                   To know more about me visit my github profile.Thank you!
+                </p>
+                <a href="https://github.com/WebDEvIbrahim" class="btn about-btn" target="_blank">View on GitHub</a>
+
+            </div>
+
+
+
+            <!-- partial -->
+        </div>
+    </section>
+    <!------------end About Us section------------------>
+
+    <!------------skill skill section------------------>
+    <!------------------------------------------------->
+    <section class="skill_section" id="skill">
+
+        <!------------------------------------------------->
+
+        <div class="row">
+            <div class="skill-box">
+                <h2>I Got Skills</h2>
+                <p class="little-description">
+                    Success is the outcome of hard work,loyalty and perfection!!. I have proficiency in front end technoligies and back end development too.
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col span_1_of_8 box true-d true-svg">
+                <img src="resources/img/man1.png" class="svg9 svg-10" alt="">
+
+            </div>
+            <div class="col span_1_of_8 box true-d">
+                <svg class="radial-progress web_design" data-percentage="90" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                </svg>
+                <h3>HTML5</h3>
+
+            </div>
+            <div class="col span_1_of_8 box true-d ">
+                <svg class="radial-progress graphic_design" data-percentage="80" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+                </svg>
+                <h3>Scss</h3>
+
+            </div>
+            <div class="col span_1_of_8 box true-d">
+                <svg class="radial-progress wordpress_design" data-percentage="75" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                </svg>
+                <h3>Javascript</h3>
+
+            </div>
+            <div class="col span_1_of_8 box true-d">
+                <svg class="radial-progress wordpress_design python-radial" data-percentage="80" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+                </svg>
+                <h3>Python</h3>
+
+            </div>
+            <div class="col span_1_of_8 box true-d">
+                <svg class="radial-progress wordpress_design django-radial" data-percentage="60" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">60%</text>
+                </svg>
+                <h3>Django</h3>
+
+            </div>
+            <div class="col span_1_of_8 box true-d">
+                <svg class="radial-progress ui_design bs4-radial" data-percentage="65" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">65%</text>
+                </svg>
+                <h3>Bootstrap4</h3>
+
+            </div>
+            <div class="col span_1_of_8 box true-d true-svg">
+                <img src="resources/img/man2.png" class="svg9" alt="">
+
+            </div>
+        </div>
+
+    </section>
+    <!------------------------------------------------>
+    <!------------end skill section------------------>
+    <!------------------------------------------------->
+    <!----------------start pricing_section app section-------------------->
+    <section class="pricing_section">
+        <div class="row">
+            <div class="row d-center box-t2">
+                <h2>Get awesome features, without
+                    extra charges</h2>
+                <p class="little-description">
+                    I am offering my services as a front end developer and web designer.Feel free to share your projects it will be an honor to work with you.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Rounded switch -->
+            <!--
+            <div class="switch-wrapper">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span  class="slider round" data-filter = ".yearly"></span>
+                </label>
+            </div>
+-->
+
+        </div>
+        <div class="row">
+            <div class="col span_1_of_6 box">
+
+            </div>
+            <div class="col span_4_of_6 box mixit">
+                <div class="col span_1_of_2 box pricing-wrapper yearly">
+                    <div class="class-wrap">
+                        <h2>$10<span><small>/2 web pages</small></span></h2>
+                        <h4>Business Class</h4>
+                        <p class="little-description">
+                           4 Days Delivery
+                        </p>
+                    </div>
+
+                    <p class="little-description">
+                        Design Customization
+                    </p>
+                    <p class="little-description" style="opacity: 0.5;">
+                        Content Upload
+                    </p>
+                    <p class="little-description">
+                        Responsive Design
+                    </p>
+                    <p class="little-description">
+                        Include Source Code
+                    </p>
+                    <a href="" class="btn " style="background: #6456C0; box-shadow: none;">Order Now</a>
+
+                </div>
+                <div class="col span_1_of_2 box pricing-wrapper monthly">
+                    <div class="class-wrap">
+                        <h2>$40<span><small>/4 pages</small></span></h2>
+                        <h4>Pro Master</h4>
+                        <p class="little-description">
+                            5 days Delivery
+                        </p>
+                    </div>
+
+                    <p class="little-description">
+                        Design Customization
+                    </p>
+                    <p class="little-description">
+                        Content Upload
+                    </p>
+                    <p class="little-description">
+                        Responsive Design
+                    </p>
+                    <p class="little-description">
+                        Include Source Code
+                    </p>
+                    <a href="" class="btn" style="background: #6456C0; box-shadow: none">Order Now</a>
+
+                </div>
+            </div>
+            <div class="col span_1_of_6 box">
+
+            </div>
+        </div>
+    </section>
+    <!----------------end pricing_section app section--------------------->
+    <!--end pricing section-->
+
+
+
+    <footer id="footer">
+        <div class="row">
+
+            <div class="center">
+                <input type="checkbox" id="show">
+                <div class="container">
+                    <label for="show" class="close-btn fas fa-times" title="close"></label>
+                    <div class="text">
+                        Let's Talk</div>
+                    <form action="#">
+                        <div class="data">
+
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="data">
+
+                            <input type="text" placeholder="Email or PHone" required>
+                        </div>
+                        <div class="data">
+
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="data">
+
+
+                            <input type="message" placeholder="Your Message" required>
+                        </div>
+                        <div class="btn">
+                            <div class="inner">
+                            </div>
+                            <button type="submit">Send Request</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_4 box">
+                    <img src="resources/img/foot_img1.png" alt="" class="foot-img upper">
+                </div>
+                <div class="col span_2_of_4 box">
+                    <div class="foot-cont-wrapper">
+                        <h2>Interested to work with us?</h2>
+                        <a href="#" class="btn btn-hero lets-talk"><label for="show" class="show-btn">Contact Me</label></a>
+                        <ul>
+                            <li><a href="https://www.facebook.com/profile.php?id=100051328030188" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100051328030188" target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
+                            <li><a href="https://www.instagram.com/ibrahimkhan7517/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col span_1_of_4 box">
+                    <img src="resources/img/foot_img2.png" alt="" class="foot-img">
+                </div>
+            </div>
+            <!-- ******************************************go top start************************** -->
+            <div class="row">
+                <i class="fas fa-arrow-up" id="up" onclick="topFunction()"></i>
+            </div>
+            <!-- *************************************go top end**************************************** -->
+
+
+        </div>
+
+    </footer>
+
+    <!--JS SCRIPTS --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="vendors/js/html5shiv.min.js"></script>
+    <script src="vendors/js/respond.min.js"></script>
+    <script src="vendors/js/selectivizr-min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/animated-circle.js"></script>
+    <script src="vendors/js/mixitup.min.js"></script>
+
+    <!-- partial -->
+    <script src='https://codepen.io/ste-vg/pen/zBVakw.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.0.1/Rx.min.js'></script>
+    <script src="flowery/dist/script.js"></script>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js'></script>
+    <script src="resources/js/mixitup.min.js"></script>
+    <script src="resources/js/weather-script.js"></script>
+
+    <script src="resources/js/main.js"></script>
+
+</body>
+
+</html>
