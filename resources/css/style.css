@@ -152,7 +152,7 @@ header {
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
-    overflow-x:hidden;
+    overflow:hidden;
 
 }
 
